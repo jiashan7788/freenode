@@ -1648,6 +1648,11 @@ def standardize_nodes(nodes):
 
 def main():
     global CORE_PATH
+
+    # 创建data目录（新增代码）
+    data_dir = 'data'
+    os.makedirs(data_dir, exist_ok=True)
+    print(f"确保数据目录存在: {data_dir}")
     
     # 查找核心程序
     CORE_PATH = find_core_program()
@@ -1703,17 +1708,17 @@ def main():
     
     # 新增：保存所有去重合并后的节点到all.txt（原始格式）
     try:
-        print(f"准备写入 all.txt，当前工作目录: {os.getcwd()}")
+        print(f"准备写入 data/all.txt，当前工作目录: {os.getcwd()}")
         all_uris = []
         for node in all_nodes:
             uri = node_to_v2ray_uri(node)
             if uri:
                 all_uris.append(uri)
-        with open('all.txt', 'w', encoding='utf-8') as f:
+        with open(os.path.join(data_dir, 'all.txt'), 'w', encoding='utf-8') as f:
             f.write('\n'.join(all_uris))
-        print(f"\n已将所有去重合并后的节点保存到 all.txt 文件")
+        print(f"\n已将所有去重合并后的节点保存到 data/all.txt 文件")
     except Exception as e:
-        print(f"保存all.txt失败: {e}")
+        print(f"保存data/all.txt失败: {e}")
         print("请检查GitHub Actions是否有写入权限，或 workflow 是否将 all.txt 文件 git add 并提交。")
     
     # 将所有URI合并为一个字符串，并进行base64编码
@@ -1722,13 +1727,13 @@ def main():
         base64_content = base64.b64encode(uri_content.encode('utf-8')).decode('utf-8')
         
         # 将base64编码后的内容写入文件
-        with open('v2ray.txt', 'w', encoding='utf-8') as f:
+        with open(os.path.join(data_dir, 'v2ray.txt'), 'w', encoding='utf-8') as f:
             f.write(base64_content)
         
         print(f"\n已将 {valid_uri_count} 个有效节点以base64编码保存到 v2ray.txt 文件")
         
         # 同时保存一个原始文本版本，方便查看
-        with open('v2ray_raw.txt', 'w', encoding='utf-8') as f:
+        with open(os.path.join(data_dir, 'v2ray_raw.txt'), 'w', encoding='utf-8') as f:
             f.write(uri_content)
         print(f"同时保存了原始文本版本到 v2ray_raw.txt 文件")
     else:
