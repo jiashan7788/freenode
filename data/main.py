@@ -22,7 +22,10 @@ links = [
     "https://raw.githubusercontent.com/jianguogongyong/ssr_subscrible_tool/refs/heads/master/node.txt", 
     "https://raw.githubusercontent.com/jgchengxin/ssr_subscrible_tool/refs/heads/master/node.txt",
     "https://raw.githubusercontent.com/dl250/dl250/refs/heads/master/node.txt",
-    "https://raw.githubusercontent.com/w154594742/ClashForge/refs/heads/main/v2ray.txt"
+    "https://raw.githubusercontent.com/Pawdroid/Free-servers/main/sub",
+    "https://raw.githubusercontent.com/chengaopan/AutoMergePublicNodes/master/list.txt",
+    "https://raw.githubusercontent.com/aiboboxx/v2rayfree/main/v2",
+    "https://raw.githubusercontent.com/roosterkid/openproxylist/main/V2RAY_BASE64.txt"
 ]
 
 # 支持的协议类型列表
