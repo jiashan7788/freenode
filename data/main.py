@@ -26,9 +26,6 @@ links = [
     "https://raw.githubusercontent.com/chengaopan/AutoMergePublicNodes/master/list.txt",
     "https://raw.githubusercontent.com/aiboboxx/v2rayfree/main/v2",
     "https://raw.githubusercontent.com/roosterkid/openproxylist/main/V2RAY_BASE64.txt",
-    "https://raw.githubusercontent.com/moneyfly1/collectSub/refs/heads/main/output/all.txt",
-    "https://raw.githubusercontent.com/qjlxg/ProxyCollector/refs/heads/master/sub/proxies.txt",
-    "https://raw.githubusercontent.com/Alvin9999/pac2/refs/heads/master/clash.meta2/15/config.yaml",
 ]
 
 # 支持的协议类型列表
