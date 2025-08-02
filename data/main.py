@@ -21,7 +21,8 @@ links = [
     "https://raw.githubusercontent.com/WLget/V2Ray_configs_64/master/ConfigSub_list.txt",    
     "https://raw.githubusercontent.com/jianguogongyong/ssr_subscrible_tool/refs/heads/master/node.txt", 
     "https://raw.githubusercontent.com/jgchengxin/ssr_subscrible_tool/refs/heads/master/node.txt",
-    "https://raw.githubusercontent.com/dl250/dl250/refs/heads/master/node.txt",  
+    "https://raw.githubusercontent.com/dl250/dl250/refs/heads/master/node.txt",
+    "https://raw.githubusercontent.com/w154594742/ClashForge/refs/heads/main/v2ray.txt"
 ]
 
 # 支持的协议类型列表
